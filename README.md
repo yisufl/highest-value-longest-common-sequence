@@ -31,6 +31,8 @@ The program computes the maximum total value of a common substring between A and
 
 ## Test Generator
 `tests/generateTest.py` generates a test to the filepath given as a parameter to the function. It selects `K` random alphabet characters and assigns each with a random value with a default range of `(0, 50)`.
+<img width="1653" height="993" alt="Picture3" src="https://github.com/user-attachments/assets/47c5ae8c-d700-433c-bf4e-98a46abccab3" />
+The runtime seems to grow quadratically.
 
 ## Question 1
 Using the test files `test[2-11].in` generated with the test generator, strings of various sizes `25` to `5000` are used to measure the runtime of the algorithm.
@@ -38,6 +40,7 @@ Using the test files `test[2-11].in` generated with the test generator, strings 
 ## Question 2
 ### Recurrence
 Let OPT(i, j) be the maximum total of a value common subsequence ending at `A[i-1]` and `B[j-1]`.
+
 $$
 OPT(i, j) =
 \begin{cases} 
